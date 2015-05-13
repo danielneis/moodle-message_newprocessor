@@ -15,18 +15,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Upgrade code for newprocessor message processor
+ * Strings for component 'message_newprocessor', language 'en'
  *
  * @package    message_newprocessor
- * @copyright  2008 Luis Rodrigues
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License
+ * @copyright  1999 onwards Martin Dougiamas  {@link http://moodle.com}
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-/**
- * Upgrade code for the newprocessor message processor
- *
- * @param int $oldversion The version that we are upgrading from
- */
-function xmldb_message_newprocessor_upgrade($oldversion) {
-    return true;
-}
+$string['pluginname'] = 'newprocessor';

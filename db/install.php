@@ -15,9 +15,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Installation code for the email message processor
+ * Installation code for the newprocessor message processor
  *
- * @package    message_email
+ * @package    message_newoutput
  * @copyright  2009 Moodle Pty Ltd (http://moodle.com)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -25,12 +25,12 @@
 /**
  * Install the email message processor
  */
-function xmldb_message_email_install() {
+function xmldb_message_newprocessor_install() {
     global $DB;
     $result = true;
 
     $provider = new stdClass();
-    $provider->name  = 'email';
+    $provider->name  = 'newprocessor';
     $DB->insert_record('message_processors', $provider);
     return $result;
 }
