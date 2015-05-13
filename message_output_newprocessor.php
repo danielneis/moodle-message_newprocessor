@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Contains the definiton of the newprocessor message processors (sends messages to users via email)
+ * Contains the definiton of the newprocessor message processors (does nothing)
  *
  * @package   message_newprocessor
  * @copyright 2008 Luis Rodrigues and Martin Dougiamas
@@ -27,11 +27,11 @@ require_once($CFG->dirroot.'/message/output/lib.php');
 /**
  * The newprocessor message processor
  *
- * @package   message_email
+ * @package   message_newprocessor
  * @copyright 2008 Luis Rodrigues and Martin Dougiamas
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class message_newprocessor_email extends message_output {
+class message_output_newprocessor extends message_output {
 
     /**
      * Processes the message (do nothing).
